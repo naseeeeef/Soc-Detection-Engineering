@@ -25,5 +25,3 @@ MITRE ATT&CK:
 T1059.001 – PowerShell
 
 Building hands-on Detection Engineering skills through Splunk lab exercises and attack simulation datasets.
-
-#Splunk #DetectionEngineering #SOC #ThreatHunting #CyberSecurity #BlueTeam #MITREATTACK
