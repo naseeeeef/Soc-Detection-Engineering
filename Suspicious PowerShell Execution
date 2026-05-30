@@ -1,0 +1,28 @@
+Detection Engineering Lab – Suspicious PowerShell Execution
+
+
+Detection focused on: 
+• EncodedCommand usage 
+• IEX (Invoke-Expression) 
+• DownloadString execution
+
+SPL Query:
+index=main powershell.exe
+| search "EncodedCommand" OR "DownloadString" OR "IEX"
+| table _time User ParentProcessName CommandLine
+
+• EncodedCommand: Attackers use this built-in PowerShell parameter to run commands hidden inside Base64-encoded strings. It turns human-readable script into a scrambled block of text, masking the true intent from superficial logging and basic security tools.
+
+• DownloadString: A .NET method (Net.WebClient) used to download a script or payload from a remote URL straight into system memory. Because the payload runs dynamically in RAM, it completely bypasses traditional antivirus tools that scan files on the hard drive.
+
+• IEX (Invoke-Expression): This cmdlet takes any string of text and executes it as a live command. Attackers heavily pair IEX with DownloadString to instantly pull a malicious script from the internet and run it in a single fluid motion.
+
+Why it matters: Attackers frequently abuse PowerShell to execute obfuscated commands, download payloads, and evade traditional defenses.
+
+Investigation points: 
+• Parent-child process relationship
+• User context 
+• Command-line arguments 
+• External download indicators
+
+MITRE ATT&CK: • T1059.001 – Command and Scripting Interpreter: PowerShell
