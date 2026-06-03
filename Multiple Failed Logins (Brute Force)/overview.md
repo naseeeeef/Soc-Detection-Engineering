@@ -3,7 +3,7 @@ Detection Engineering Lab – Multiple Failed Logins (Brute Force)
 Splunk detection to identify potential brute-force authentication attempts against Windows systems.
 
 Detection focused on:
-• Excessive failed login attempts (Event ID 4625)
+ • Excessive failed login attempts (Event ID 4625)
  • Multiple usernames targeted from the same source IP
  • High-volume authentication failures within a short time window
  • Failed logins followed by successful authentication (Event ID 4624)
